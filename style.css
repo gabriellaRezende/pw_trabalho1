@@ -1,3 +1,28 @@
+/* Modos de fonte*/
+
+p {
+  font-family: "Economica", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Economica", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.economica-regular-italic {
+  font-family: "Economica", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.economica-bold-italic {
+  font-family: "Economica", serif;
+  font-weight: 700;
+  font-style: italic;
+}
 
 /* Reset básico e configurações gerais */
 * {

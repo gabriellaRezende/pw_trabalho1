@@ -1,3 +1,11 @@
+/* Cores do Sitema 
+cor-primaria: #2D6A4F;
+cor-secundaria: #95D5B2;
+cor-texto: #333333;
+cor-fundo: #FFFFFF;
+cor-fundo-claro: #F6F8FA;
+*/
+
 /* Modos de fonte*/
 
 p {
@@ -12,17 +20,29 @@ h1 {
   font-style: normal;
 }
 
-.economica-regular-italic {
-  font-family: "Economica", serif;
-  font-weight: 400;
-  font-style: italic;
+.mvv{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 12px;
 }
 
-.economica-bold-italic {
-  font-family: "Economica", serif;
-  font-weight: 700;
-  font-style: italic;
+.sobre{
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espaço entre o texto e a imagem */
 }
+
+.texto-sobre {
+  flex: 1; /* Faz o texto ocupar o espaço disponível */
+}
+
+.img-sobre {
+  width: 50%; /* Largura da imagem ao lado do texto */
+  max-width: 300px; /* Limite de largura para manter proporção */
+  display: block;
+}
+
 
 /* Reset básico e configurações gerais */
 * {
@@ -90,6 +110,25 @@ footer {
   font-size: 0.9em;
 }
 
+.container {
+  display: flex;
+  flex-direction: column; /* Coluna para dispositivos móveis */
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card{
+  background-color: #FFFFFF;
+  border: 1px solid #2D6A4F;
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%; /* Largura total no mobile */
+  max-width: 300px; /* Largura máxima para alinhar */
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Responsividade para tablets e desktops */
 @media (min-width: 768px) {
   nav {
@@ -109,4 +148,21 @@ footer {
   header h1 {
     font-size: 2.2em;
   }
+  
+  .container{
+    flex-direction: row; /* Alinhamento em linha para telas maiores */
+    justify-content: space-around; /* Espaço entre os contêineres */
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  .sobre {
+    display: block; /* Alinha os elementos em coluna no mobile */
+}
+
+.img-sobre {
+    display: none !important; /* Oculta a imagem em telas menores */
+}
 }

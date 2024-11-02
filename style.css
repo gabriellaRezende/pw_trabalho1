@@ -12,13 +12,9 @@ p {
   font-family: "Economica", serif;
   font-weight: 400;
   font-style: normal;
+  font-size: large !important;
 }
 
-h1 {
-  font-family: "Economica", serif;
-  font-weight: 700;
-  font-style: normal;
-}
 
 .mvv{
   display: flex;
@@ -43,8 +39,6 @@ h1 {
   display: block;
 }
 
-
-/* Reset básico e configurações gerais */
 * {
   margin: 0;
   padding: 0;
@@ -157,6 +151,7 @@ footer {
 
 }
 
+/*Responsividade especifica para desktop*/
 @media (max-width: 768px) {
   .sobre {
     display: block; /* Alinha os elementos em coluna no mobile */

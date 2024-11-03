@@ -15,6 +15,63 @@ p {
   font-size: large !important;
 }
 
+/* Estilo do link */
+#openModal {
+  cursor: pointer;
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+/* Estilos básicos do modal */
+.modal {
+  display: none; /* Escondido por padrão */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Exibe o modal quando o link é clicado */
+.modal:target {
+  display: flex; /* Torna o modal visível */
+}
+
+/* Conteúdo do modal */
+.modal-content {
+  background-color: #ffffff;
+  width: 90%; /* Largura fixa para mobile */
+  max-width: 400px; /* Largura máxima para telas maiores */
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  max-height: 70vh; /* Altura máxima para limitar o modal */
+  overflow: hidden; /* Esconde o conteúdo que excede o limite */
+}
+
+.modal-body {
+  max-height: 60vh; /* Define a altura fixa da área rolável */
+  overflow-y: auto; /* Ativa o scroll vertical */
+  padding-right: 10px; /* Espaço para evitar que o conteúdo corte no scroll */
+}
+
+.close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-decoration: none;
+  color: #aaa;
+}
+
+/* Fechar modal quando clica fora */
+.modal:target .modal-content {
+  display: block;
+}
+
 
 .mvv{
   display: flex;

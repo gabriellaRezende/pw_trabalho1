@@ -32,11 +32,20 @@
     
   </main>
 
-  <!-- Rodapé com informações de direitos autorais -->
+  <!-- Rodapé com informações de direitos autorais e um link para abrir as politicas em um modal na tela -->
   <footer>
     <p>&copy; 2024 EcoFuture. Todos os direitos reservados.</p>
-    <p><a href="#privacy-popup">Políticas de Privacidade</a></p>
+    <p><a href="#modal" id="openModal">Políticas de Privacidade</a></p>
   </footer>
+
+  <!-- Estrutura do modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close">&times;</a> <!-- Botão de X para fechar o modal -->
+      <h2>Políticas de Privacidade</h2>
+      <p>Conteúdo das políticas de privacidade vai aqui. Você pode adicionar todo o texto que precisar.</p>
+    </div>
+  </div>
 
 </body>
 </html>

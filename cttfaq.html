@@ -22,13 +22,103 @@
 
   <!-- Cabeçalho com o nome da empresa -->
   <header>
-    <h1>EcoFuture</h1>
-    <p>Soluções Sustentáveis para um Futuro Melhor</p>
+    <h1>Contato</h1>
   </header>
 
-  <!-- Conteúdo principal da página inicial -->
+  <!-- Informações de contato -->
   <main>
-    
+    <div class="contato">
+      <div class="contato-info">
+        <h1>Informações de Contato</h1>
+        <p> <strong> Endereço: </strong> Rua Verde, 123, Lisboa</p>
+        <p> <strong> Telefone: </strong> +351 123 456 789</p>
+        <p> <strong> E-mail: </strong> contato@ecofuture.com </p>
+      </div>
+      
+      <div class="contato-map"> 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.869011120572!2d-9.16443932525569!3d38.72081625710574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd193483936e03b3%3A0x6008f0c06bec3be2!2sECO%20-%20Economia%20Online!5e0!3m2!1spt-PT!2spt!4v1730668670717!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="contato-mail">
+        <h1> Entre em contato conosco </h1>
+        <form action="#" method="post">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required>
+  
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+  
+          <label for="phone">Telefone:</label>
+          <input type="tel" id="phone" name="phone">
+  
+          <label for="message">Mensagem:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+  
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div> 
+
+    <div>
+      <h1> FAQ </h1>
+      <div>
+        <div class="dropdown">
+          <input type="checkbox" id="dropdownToggle1">
+          <label class="dropdown-header" for="dropdownToggle1">
+              <span class="title">Como posso contratar a EcoFuture?</span>
+              <span class="icon">▼</span>
+          </label>
+          <div class="dropdown-content">
+              <p>Entre em contato pelo formulário ou ligue para nós.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <input type="checkbox" id="dropdownToggle2">
+          <label class="dropdown-header" for="dropdownToggle2">
+              <span class="title">Vocês oferecem serviços para pequenas empresas?</span>
+              <span class="icon">▼</span>
+          </label>
+          <div class="dropdown-content">
+              <p>Sim, nossos serviços são adaptáveis a empresas de todos os tamanhos.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <input type="checkbox" id="dropdownToggle3">
+          <label class="dropdown-header" for="dropdownToggle3">
+              <span class="title">Os produtos são realmente biodegradáveis?</span>
+              <span class="icon">▼</span>
+          </label>
+          <div class="dropdown-content">
+              <p>Sim, todos os nossos produtos são compostáveis e certificados.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <input type="checkbox" id="dropdownToggle4">
+          <label class="dropdown-header" for="dropdownToggle4">
+              <span class="title">Quanto tempo leva para implementar uma consultoria?</span>
+              <span class="icon">▼</span>
+          </label>
+          <div class="dropdown-content">
+              <p>Depende do escopo, mas geralmente de 2 a 4 semanas.</p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <input type="checkbox" id="dropdownToggle5">
+          <label class="dropdown-header" for="dropdownToggle5">
+              <span class="title">Vocês atendem fora de Lisboa?</span>
+              <span class="icon">▼</span>
+          </label>
+          <div class="dropdown-content">
+              <p>Sim, nossos serviços estão disponíveis em todo o país.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </main>
 
   <!-- Rodapé com informações de direitos autorais e um link para abrir as politicas em um modal na tela -->
@@ -37,7 +127,7 @@
     <p><a href="#modal" id="openModal">Políticas de Privacidade</a></p>
   </footer>
 
-  <!-- Estrutura do modal -->
+  <!-- Estrutura do modal de politicas de privacidade -->
   <div id="modal" class="modal">
     <div class="modal-content">
       <a href="#" class="close"> </a>

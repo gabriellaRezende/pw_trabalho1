@@ -23,30 +23,77 @@
 
   <!-- Cabeçalho com o nome da empresa -->
   <header>
-    <h1>EcoFuture</h1>
-    <p>Soluções Sustentáveis para um Futuro Melhor</p>
+    <div class="logo">
+      <a href="index.html"><img src="Imagens/Design_sem_nome-removebg-preview.png" alt="Logo EcoFuture"></a>
+  </div>
   </header>
 
   <!-- Conteúdo principal da página inicial -->
   <main>
-    <section id="home">
+    <!--Destaque do Site-->
+    <section class="carousel">
+      <input type="radio" name="carousel" id="carousel-1" checked>
+      <input type="radio" name="carousel" id="carousel-2">
+      <input type="radio" name="carousel" id="carousel-3">
+
+      <label for="carousel-3" class="carousel-arrow left-arrow"></label>
+      <label for="carousel-2" class="carousel-arrow right-arrow"></label>
+      <label for="carousel-1" class="carousel-arrow left-arrow"></label>
+      <label for="carousel-3" class="carousel-arrow right-arrow"></label>
+      <label for="carousel-2" class="carousel-arrow left-arrow"></label>
+      <label for="carousel-1" class="carousel-arrow right-arrow"></label>
+
+      <!--Imagens do destaque-->
+      <div class="carousel-content">
+        <!-- Primeira Imagem -->
+        <div class="carousel-item" id="slide-1">
+            <img src="Imagens/EcoFuture2.png" alt="bunner_1">
+        </div>
+        <!-- Segunda Imagem -->
+        <div class="carousel-item" id="slide-2">
+            <img src="Imagens/EcoFuture.png" alt="bunner_2">
+        </div>
+        <!-- Terceira Imagem -->
+        <div class="carousel-item" id="slide-3">
+            <img src="Imagens/EcoFuture3.png" alt="bunner_3">
+        </div>
+    </div>
+
+    <div class="carousel-dots">
+      <label for="carousel-1" class="carousel-dot"></label>
+      <label for="carousel-2" class="carousel-dot"></label>
+      <label for="carousel-3" class="carousel-dot"></label>
+    </div>
+    </section> 
+
+    <section class="home">
       <h2>Bem-vindo à EcoFuture</h2>
-      <p>A EcoFuture oferece produtos e serviços sustentáveis que ajudam empresas e pessoas a reduzirem seu impacto ambiental. Junte-se a nós em uma jornada para um planeta mais verde e saudável</p>
+      <p>A EcoFuture oferece produtos e serviços sustentáveis que ajudam empresas e pessoas a reduzirem seu impacto ambiental.</p> 
+      <strong>Junte-se a nós numa jornada para um planeta mais verde e saudável!</strong>
       <!-- Local para a imagem principal da empresa -->
-      <img src="imagens/banner.jpg" alt="Imagem representativa da EcoFuture" style="width: 100%;">
-    </section>
-    <section>
-      <h1> Sobre a Empresa</h1>
+      <!--<img src="imagens/Design sem nome.png" alt="Imagem representativa da EcoFuture" class="imag-sobr" style="width: 100px;">-->
+      <hr class="linhas_personalizadas">
+      <h2> Sobre a Empresa</h2>
       <p> Nossa empresa se dedica a fornecer soluções ecológicas que promovem a sustentabilidade e a eficiência para empresas e indivíduos comprometidos com o meio ambiente. Nossa missão é criar um impacto positivo através de serviços que reduzem o desperdício, economizam recursos e melhoram a qualidade de vida.</p>
     </section>
 
+    <hr class="linhas_personalizadas">
+    
     <div>
-      <div>
-        <h1> Consultria Ambiental</h1>
-        <p> Oferecemos análises personalizadas para identificar áreas de impacto ambiental e propor práticas mais sustentáveis. Nosso objetivo é ajudar empresas a minimizar sua pegada de carbono e melhorar a eficiência energética.</p>
+      <div class="home">
+        <h2> Consultria Ambiental </h2> 
+        <p>Oferece uma gama de serviços essenciais, desde a avaliação de impacto ambiental até o planejamento de medidas para mitigação e compensação.</p>
+        <p>Inclui a análise de áreas afetadas por projetos industriais, a recuperação de espaços degradados, a gestão de resíduos, e a implementação de programas de eficiência energética.</p> 
+        <p>Nosso objetivo é reduzir o impacto ambiental e, ao mesmo tempo, assegurar que cada cliente alcance os melhores resultados, respeitando as exigências legais e os compromissos com a sustentabilidade.</p>
       </div>
     </div>
-
+    <div class="caixa">
+      <h1>Destaque</h1>
+      <p><strong>Sistemas de suporte de vida da Terra estão em "estado crítico". </strong></p>
+      <p>A Terra já ultrapassou a zona de segurança para a humanidade e aproxima-se rapidamente de um estado de "alerta vermelho", de acordo com um novo relatório sobre a saúde do planeta.</p>
+      <img src="Imagens/Poluicao.png" alt="Imagem da caixa" style="width: 500px;">
+      <p>Cada um de nós pode contribuir para proteger o planeta. Pequenas ações como reduzir o consumo de plástico, reciclar, economizar água e energia, e apoiar empresas comprometidas com práticas sustentáveis fazem uma grande diferença.</p>
+    </div>
   </main>
 
   <!-- Rodapé com informações de direitos autorais e um link para abrir as politicas em um modal na tela -->

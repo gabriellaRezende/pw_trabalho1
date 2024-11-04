@@ -142,6 +142,12 @@ nav a {
   margin: 5px 0;
 }
 
+.logo img {
+  max-height: 170px; /* Increase the height of the logo */
+  height: auto; /* Maintain aspect ratio */
+  margin: -20px 0; /* Adjust vertical positioning if needed */
+}
+
 nav a:hover {
   color: #2D6A4F;
   font-weight: bold;
@@ -158,6 +164,137 @@ footer {
   text-align: center;
   padding: 15px;
   font-size: 0.9em;
+}
+
+.home h2 {
+  padding-left: 30px;
+}
+
+/*Divisão por linhas*/
+.linhas_personalizadas {
+  border: none; /* Remove o estilo padrão */
+  background-color: #95D5B2;/*Define a cor da linha*/
+  height: 2.5px; /* Define a espessura da linha */
+  width: 97%; /* Define a largura */
+  margin: 20px auto; /* Centraliza a linha com margem */
+}
+/*Destaque sobre o site */
+.carousel {
+  position:relative;
+  width: 100%;
+  max-width: auto;
+  margin: 2rem auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  height: auto;
+}
+
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+  transition: background-color 0.3s;
+}
+
+.carousel-arrow:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Posicionamento das setas */
+.left-arrow {
+  left: 2rem;
+}
+
+.right-arrow {
+  right: 2rem;
+}
+
+.carousel-content {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%; 
+}
+
+.carousel-content img{
+  width: 100%;
+}
+
+.carousel-item {
+  min-width: 100%;
+  text-align: center;
+  background-color: #ffe4b5;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Hide Radio Butões */
+input[type="radio"] {
+  display: none;
+}
+
+/* Carousel Navegação */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  background-color: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input#carousel-1:checked ~ .carousel-content {
+  transform: translateX(0%);
+}
+input#carousel-2:checked ~ .carousel-content {
+  transform: translateX(-100%);
+}
+input#carousel-3:checked ~ .carousel-content {
+  transform: translateX(-200%);
+}
+
+input#carousel-1:checked ~ .carousel-dots label[for="carousel-1"],
+input#carousel-2:checked ~ .carousel-dots label[for="carousel-2"],
+input#carousel-3:checked ~ .carousel-dots label[for="carousel-3"] {
+  background-color: #333;
+}
+
+.caixa {
+  width: 600px; /* Largura da caixa */
+  padding: 20px; /* Espaçamento interno */
+  background-color: #d1c7c7; /* Cor de fundo */
+  border: 2px solid #2D6A4F; /* Borda da caixa */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin: 20px auto; /* Centraliza e dá espaçamento externo */
+}
+.caixa p {
+  margin-bottom: 
+  0.5cm;
+}
+.caixa img{
+  display: block; /* Necessário para usar margin:auto em uma imagem */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    max-width: 100%;
 }
 
 .container {

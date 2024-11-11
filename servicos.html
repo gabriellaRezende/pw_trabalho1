@@ -19,27 +19,64 @@
         <a href="cttfaq.html">Contato</a>
       </nav>
 
+
+  <!-- Cabeçalho da página de serviços -->
   <header>
-    <h1>EcoFuture</h1>
+    <h1>Nossos Serviços</h1>
+    <p>Na EcoFuture, oferecemos soluções para promover a sustentabilidade e reduzir o impacto ambiental.</p>
   </header>
 
-
+  <!-- Conteúdo principal da página de serviços -->
   <main>
-    <section id="servicos">
-      <h2>Nossos Serviços</h2>
-      <article>
-        <h3>Consultoria Ambiental</h3>
-        <p>Orientação especializada para empresas que buscam reduzir seu impacto ambiental.</p>
-      </article>
-      <article>
-        <h3>Produtos Biodegradáveis</h3>
-        <p>Linha de produtos biodegradáveis que oferecem alternativas ao plástico.</p>
-      </article>
-      <article>
-        <h3>Educação Sustentável</h3>
-        <p>Workshops e palestras para conscientização sobre práticas ecológicas.</p>
-      </article>
-    </section>
+    <!-- Container para organizar os cartões de serviço -->
+    <div class="service-container">
+
+      <!-- Sessão de Avaliação de Impacto Ambiental -->
+      <section class="service-card">
+        <img src="Imagens/avali" alt="Imagem representando avaliação de impacto ambiental">
+        <div class="service-info">
+          <h2>Avaliação de Impacto Ambiental</h2>
+          <p>Avaliamos o impacto ambiental de projetos, identificando efeitos no meio ambiente e oferecendo estratégias de mitigação.</p>
+        </div>
+      </section>
+
+      <!-- Sessão de Recuperação de Espaços Degradados -->
+      <section class="service-card">
+        <img src="Imagens/recuperacao-espacos.png" alt="Imagem representando a recuperação de espaços degradados">
+        <div class="service-info">
+          <h2>Recuperação de Espaços Degradados</h2>
+          <p>Recuperamos áreas afetadas por atividades humanas, restaurando ecossistemas com técnicas de ponta.</p>
+        </div>
+      </section>
+
+      <!-- Sessão de Gestão de Resíduos -->
+      <section class="service-card">
+        <img src="Imagens/gestao-residuos.png" alt="Imagem representando gestão de resíduos">
+        <div class="service-info">
+          <h2>Gestão de Resíduos</h2>
+          <p>Soluções para gestão de resíduos industriais e comerciais, incluindo reciclagem e redução de resíduos.</p>
+        </div>
+      </section>
+
+      <!-- Sessão de Eficiência Energética -->
+      <section class="service-card">
+        <img src="Imagens/eficiencia-energetica.png" alt="Imagem representando eficiência energética">
+        <div class="service-info">
+          <h2>Programas de Eficiência Energética</h2>
+          <p>Programas para reduzir consumo de energia, promovendo práticas sustentáveis e redução de custos.</p>
+        </div>
+      </section>
+
+      <!-- Sessão de Consultoria Personalizada -->
+      <section class="service-card">
+        <img src="Imagens/consultoria.png" alt="Imagem representando consultoria personalizada">
+        <div class="service-info">
+          <h2>Consultoria Personalizada</h2>
+          <p>Consultoria adaptada às necessidades de cada cliente, com foco em sustentabilidade e conformidade legal.</p>
+        </div>
+      </section>
+      
+    </div>
   </main>
 
   <!-- Rodapé com informações de direitos autorais e um link para abrir as politicas em um modal na tela -->
@@ -54,11 +91,9 @@
       <a href="#" class="close"> </a>
 
       <div class="modal-body"> 
-        <div>
-          <h2>Políticas de Privacidade <a href="#" class="close">&times;</a> </h2>
-          
-        </div>
-      
+
+      <h2>Políticas de Privacidade <a href="#" class="close">&times;</a> </h2>
+
       <p>EcoFuture valoriza a privacidade e a proteção dos dados de seus clientes e visitantes. Esta Política de Privacidade descreve como coletamos, utilizamos e protegemos as informações que você compartilha conosco.
       </p> 
       <p> <strong> 1. Coleta de Informações </strong>  : Coletamos informações pessoais fornecidas diretamente por você, como nome, e-mail e telefone, quando você preenche formulários em nosso site ou entra em contato conosco. Também podemos coletar informações automaticamente, como dados de navegação, através de cookies, para melhorar a sua experiência no site.
@@ -76,5 +111,52 @@
      </div>
   </div>
 
+  <style>
+    body {
+      font-family: 'Economica', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #f0f4f8;
+    }
+    
+    
+    h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    .service-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 2em;
+    }
+    .service-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      width: 250px;
+      transition: transform 0.3s;
+      text-align: center;
+    }
+    .service-card:hover {
+      transform: scale(1.05);
+    }
+    .service-card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+    .service-info {
+      padding: 1em;
+    }
+    .service-info h2 {
+      font-size: 1.5em;
+      color: #006b3c;
+    }
+    
+  </style>
 </body>
 </html>
